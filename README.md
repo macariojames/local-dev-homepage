@@ -1,5 +1,4 @@
 # Local Dev Homepage
-## local-dev-homepage
 A homepage for all your locally developed websites. Just PHP, HTML/CSS, and (eventually) Bootstrap.
 
 ### Installation:
