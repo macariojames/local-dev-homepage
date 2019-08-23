@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Local Dev Homepage | Macario James</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="public/css/main.css">
+	<link rel="stylesheet" href="/public/css/main.css">
 </head>
 
     <body>
@@ -23,9 +23,9 @@
 			        </ul>
 			    </nav>
 
-		    </header>
+		    </header>d
 
-			<div class="">
+			<div>
 				<ol class="project-listing">
 				<?php
 					// Using glob to grab every directory that doesn't start with '.' (hidden) and directories that start with '_' (i like to start directories with '_' when i want them to be at the top when listed); notice the GLOB_ONLYDIR flag'
@@ -63,13 +63,11 @@
 					} */
 				?>
 				</ol>
-				<pre>
-				<?php echo print_r($dirs, 1); ?>
-				</pre>
+				<?php if($debug) echo "<pre>" . print_r($dirs, 1) . "</pre>"; ?>
 			</div>
 
-	<footer class="cf" style="text-align: center;">
-	<p>&copy; <?php echo date('Y') . " Macario James DeLaCruz"; ?></p>
+	<footer>
+	<p>&copy; <?php echo date('Y') . " Macario James"; ?></p>
 	</footer>
 
 </div>
